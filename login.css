@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #161515;
+}
+
+main {
+    width: 60%;
+    max-width: 700px;
+    background: rgb(245, 240, 240);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(233, 227, 227, 0.1);
+    padding: 35px;
+}
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    flex: 1; 
+    padding: 0px;
+    border: 1px solid #f1eaea;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+    }
+}
+
+
+img {
+    object-fit: cover;
+}
+
+.login-details {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 2970px;
+}
+
+.category {
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-bottom: 40%;
+}
+
+.heading {
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+    font-size: 1.8rem;
+    margin: 10px 0;
+    width: 300px;
+    margin-bottom: 10%;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 25px 0;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7rem;
+    font-family: 'Fraunces';
+    margin-top: 8%;
+}
+
+.email {
+    margin-bottom: -9px;
+}
+
+.password {
+    margin-bottom: -9px;
+}
+
+input {
+    margin: 10px;
+    padding: 7%;
+    border-radius: 10px;
+    width: 200px;
+    height: 10px;
+    margin-bottom: -5%;
+    margin-left: -5%;
+}
+
+.sign-in-btn {
+    text-align: center;
+    margin: 25px;
+    margin-left: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 1em;
+    background-color: rgb(94, 76, 197);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease ;
+}  
+
+.sign-in-btn:hover{
+    background-color:hsl(234, 76%, 63%);
+    color: hsl(258, 79%, 50%) ;
+    transform: scale(1.05);
+}
+
+.sign-up {
+    font-family: 'Fraunces';
+    text-align: center;
+}
